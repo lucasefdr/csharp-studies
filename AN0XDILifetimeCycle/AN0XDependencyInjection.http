@@ -1,0 +1,6 @@
+@AN0XDependencyInjection_HostAddress = http://localhost:5056
+
+GET {{AN0XDependencyInjection_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS01Fundamentals", "CS01Fundamentals\CS01Fundamentals.csproj", "{D3AB8564-03B7-48C6-9D20-E4E63B29C35D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS03OOP", "CS03OOP\CS03OOP.csproj", "{386714CA-2FFB-4599-B513-7893E06E2BFC}"
@@ -7,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS0XDesignPatterns", "CS0XDesignPatterns\CS0XDesignPatterns.csproj", "{9FD93DED-B657-495F-B622-8587CE668F04}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS02ControlStructures", "CS02ControlStructures\CS02ControlStructures.csproj", "{62390606-76B4-4CB0-A1AF-BB47B637C5D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AN0XDILifetimeCycle", "AN0XDILifetimeCycle\AN0XDILifetimeCycle.csproj", "{459CDBFE-889E-4226-B7F0-06A7DD34A083}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +35,12 @@ Global
 		{62390606-76B4-4CB0-A1AF-BB47B637C5D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62390606-76B4-4CB0-A1AF-BB47B637C5D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62390606-76B4-4CB0-A1AF-BB47B637C5D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{459CDBFE-889E-4226-B7F0-06A7DD34A083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{459CDBFE-889E-4226-B7F0-06A7DD34A083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{459CDBFE-889E-4226-B7F0-06A7DD34A083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{459CDBFE-889E-4226-B7F0-06A7DD34A083}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
