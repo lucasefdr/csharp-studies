@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS02ControlStructures", "CS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AN0XDILifetimeCycle", "AN0XDILifetimeCycle\AN0XDILifetimeCycle.csproj", "{459CDBFE-889E-4226-B7F0-06A7DD34A083}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS04Collections", "CS04Collections\CS04Collections.csproj", "{226AA21F-6043-472B-975E-05E5DD514B2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{459CDBFE-889E-4226-B7F0-06A7DD34A083}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{459CDBFE-889E-4226-B7F0-06A7DD34A083}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{459CDBFE-889E-4226-B7F0-06A7DD34A083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{226AA21F-6043-472B-975E-05E5DD514B2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{226AA21F-6043-472B-975E-05E5DD514B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{226AA21F-6043-472B-975E-05E5DD514B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{226AA21F-6043-472B-975E-05E5DD514B2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
