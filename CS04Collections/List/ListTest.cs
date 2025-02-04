@@ -35,7 +35,7 @@ public class ListTest
         var containsTrue = listOfNumbers2.Contains(1);
         var containsFalse = listOfNumbers2.Contains(5);
 
-        // Verifica se contém o elementos na lista de acordo com uma condição
+        // Verifica se contém elementos na lista de acordo com uma condição
         var existsTrue = listOfNumbers2.Exists(e => e % 2 == 0);
 
         /*** Ordenação e inversão ***/

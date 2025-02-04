@@ -10,7 +10,6 @@ builder.Services.AddTransient<TertiaryService>(); // Transient: ID por instância
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
