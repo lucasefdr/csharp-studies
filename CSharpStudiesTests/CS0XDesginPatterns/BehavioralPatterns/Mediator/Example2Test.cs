@@ -2,7 +2,7 @@
 using CS0XDesignPatterns.BehavioralPatterns.Mediator.Example2.Commands;
 using FluentAssertions;
 
-namespace Tests.CS0XDesginPatterns.BehavioralPatterns.Mediator;
+namespace CSharpStudiesTests.CS0XDesginPatterns.BehavioralPatterns.Mediator;
 
 public class Example2Test
 {

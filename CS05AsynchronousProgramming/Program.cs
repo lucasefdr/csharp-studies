@@ -1,20 +1,23 @@
 ﻿using CS05AsynchronousProgramming;
 using System.Diagnostics;
 
-var stopWatch = new Stopwatch();
+//var stopWatch = new Stopwatch();
 
-Console.WriteLine("SYNC operation");
-stopWatch.Start();
-SyncBreakfast.MakeSyncBreakfast();
-stopWatch.Stop();
+//Console.WriteLine("SYNC operation");
+//stopWatch.Start();
+//SyncBreakfast.MakeSyncBreakfast();
+//stopWatch.Stop();
 
-var tsSync = stopWatch.Elapsed;
-Console.WriteLine("### Sync time: " + tsSync);
+//var tsSync = stopWatch.Elapsed;
+//Console.WriteLine("### Sync time: " + tsSync);
 
-Console.WriteLine("\nASYNC operations");
-stopWatch.Restart();
-await AsyncBreakfast.MakeAsyncBreakfast();
-stopWatch.Stop();
+//Console.WriteLine("\nASYNC operations");
+//stopWatch.Restart();
+//await AsyncBreakfast.MakeAsyncBreakfast();
+//stopWatch.Stop();
 
-var tsAsync = stopWatch.Elapsed;
-Console.WriteLine("### Async time: " + tsAsync);
+//var tsAsync = stopWatch.Elapsed;
+//Console.WriteLine("### Async time: " + tsAsync);
+
+Console.WriteLine("=> Cancellation Token");
+await TaskCancellation.ExecuteWithCancellationTokenAfterTime();
