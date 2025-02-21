@@ -4,7 +4,7 @@ public abstract class BaseComponent
 {
     protected IMediator _mediator;
 
-    public BaseComponent(IMediator mediator = null)
+    public BaseComponent(IMediator mediator = null!)
     {
         _mediator = mediator;
     }

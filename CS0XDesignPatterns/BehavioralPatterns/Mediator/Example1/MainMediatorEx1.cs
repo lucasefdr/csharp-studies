@@ -7,7 +7,7 @@ public static class MainMediatorEx1
         var componentA = new ComponentA();
         var componentB = new ComponentB();
 
-        new Mediator(componentA, componentB);
+        _ = new Mediator(componentA, componentB);
 
         componentA.ExecuteActionA();
         Console.WriteLine();

@@ -1,6 +1,6 @@
 ﻿namespace CS0XDesignPatterns.BehavioralPatterns.Mediator.Example1;
 
-public class ComponentB : BaseComponent
+public class ComponentB: BaseComponent
 {
     public void ExecuteActionB()
     {
