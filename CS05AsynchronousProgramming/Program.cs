@@ -11,13 +11,19 @@ using System.Diagnostics;
 //var tsSync = stopWatch.Elapsed;
 //Console.WriteLine("### Sync time: " + tsSync);
 
-//Console.WriteLine("\nASYNC operations");
+Console.WriteLine("\nASYNC operations");
 //stopWatch.Restart();
-//await AsyncBreakfast.MakeAsyncBreakfast();
+await AsyncBreakfast.MakeAsyncBreakfast();
 //stopWatch.Stop();
 
 //var tsAsync = stopWatch.Elapsed;
 //Console.WriteLine("### Async time: " + tsAsync);
 
-Console.WriteLine("=> Cancellation Token");
-await TaskCancellation.ExecuteWithCancellationTokenAfterTime();
+//Console.WriteLine("=> Cancellation Token");
+//await TaskCancellation.ExecuteWithCancellationTokenAfterTime();
+
+// Tratamento de exceções assíncronas
+
+//AsyncException.CallExceptionAsync();
+//await AsyncException.RunMultipleExceptions();
+//Console.ReadKey();

@@ -17,20 +17,42 @@ internal class AsyncBreakfast
 
         Task<Egg> eggsTask = FryEggsAsync(2);
         Task<Bacon> baconTask = FryBaconAsync(4);
-        Task<Toast> toastTask = ToastBreadAsync(2);
+        Task<Toast> toastTask = MakeToastWithButterAndJamAsync(2);
 
-        Toast toast = await toastTask;
-        ApplyButter(toast);
-        ApplyJam(toast);
+        #region WhenAll
+        //Console.WriteLine("==> WhenAll...");
+        //await Task.WhenAll(eggsTask, baconTask, toastTask);
+        //Console.WriteLine("==> WhenAll Finished...");
+        #endregion
+
+        #region WhenAny
+        var tasks = new List<Task>() { eggsTask, baconTask, toastTask };
+        while (tasks.Count > 0)
+        {
+            Task finishedTask = await Task.WhenAny(tasks);
+
+            if (finishedTask == eggsTask) Console.WriteLine("Eggs are ready");
+            else if (finishedTask == baconTask) Console.WriteLine("Bacon is ready");
+            else if (finishedTask == toastTask) Console.WriteLine("Toast is ready");
+            await finishedTask;
+
+            tasks.Remove(finishedTask);
+        }
+        #endregion
+
+        // Toast toast = await toastTask;
         Console.WriteLine("Toast is ready");
+
+        // Egg eggs = await eggsTask;
+        Console.WriteLine("Eggs are ready");
+
+        // Bacon bacon = await baconTask;
+        Console.WriteLine("Bacon is ready");
 
         Juice juice = PourOJ();
         Console.WriteLine("Juice is ready");
 
-        Egg eggs = await eggsTask;
-        Console.WriteLine("Eggs are ready");
-        Bacon bacon = await baconTask;
-        Console.WriteLine("Bacon is ready");
+
 
         Console.WriteLine("=> Breakfast async is ready!");
     }
@@ -61,6 +83,15 @@ internal class AsyncBreakfast
         Console.WriteLine("Start toasting...");
         await Task.Delay(3000);
         Console.WriteLine("Remove toast from toaster");
+
+        return new Toast();
+    }
+
+    private static async Task<Toast> MakeToastWithButterAndJamAsync(int slices)
+    {
+        var toast = await ToastBreadAsync(slices);
+        ApplyButter(toast);
+        ApplyJam(toast);
 
         return new Toast();
     }
