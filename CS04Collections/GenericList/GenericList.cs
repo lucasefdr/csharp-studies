@@ -1,6 +1,6 @@
-﻿namespace CS04Collections.List;
+﻿namespace CS04Collections.GenericList;
 
-public class ListTest
+public class GenericList
 {
     public static void ListRun()
     {
@@ -39,11 +39,11 @@ public class ListTest
         var existsTrue = listOfNumbers2.Exists(e => e % 2 == 0);
 
         /*** Ordenação e inversão ***/
-        // Reverte a lista
-        listOfNumbers2.Reverse();
-
         // Ordena a lista
         listOfNumbers2.Sort();
+
+        // Reverte a lista
+        listOfNumbers2.Reverse();
 
         /*** Iteração ***/
         // Acessando elementos da lista

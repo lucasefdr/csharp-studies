@@ -1,3 +1,5 @@
-﻿using CS04Collections.List;
+﻿using CS04Collections.GenericList.Exercise1;
+using CS04Collections.GenericList.Exercise2;
+using CS04Collections.GenericList.Exercise3;
 
-ListTest.ListRun();
+GLExercise3.Execute();
